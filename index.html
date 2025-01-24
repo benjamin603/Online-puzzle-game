@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线拼图小游戏 - Benjamin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="game-container">
+            <div class="top-bar">
+                <div id="timer">时间: 00:00</div>
+                <button id="mute-button">静音</button>
+            </div>
+            <div id="puzzle-container-wrapper">
+                <div id="puzzle-container"></div>
+                <div id="fireworks-container"></div>
+                <button id="start-button">开始</button>
+            </div>
+            <div class="difficulty-buttons">
+                <button data-difficulty="easy">简单 (3x3)</button>
+                <button data-difficulty="medium">中等 (5x5)</button>
+                <button data-difficulty="hard">困难 (10x10)</button>
+            </div>
+        </div>
+        <div id="mask"></div>
+    </div>
+    <audio id="move-sound">
+        <source src="sounds/move.mp3" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="victory-sound">
+        <source src="sounds/victory.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+    <script src="script.js"></script>
+    <footer>
+        <p>Design By <a href="https://xwoniu.com">Benjamin</a></p>
+    </footer>
+</body>
+</html> 
